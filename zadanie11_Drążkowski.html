@@ -1,0 +1,72 @@
+
+<html>
+<head>
+  
+</head>
+<body>
+<h1>Rodzaje selektorów</h1>
+1)selektor prosty (selektor typu)<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+p
+ {
+ color:red;
+ font-size:14pt;
+  }
+</textarea>
+<br>
+Selektorem prostym jest znaczniki języka XHTML/HTML (np. p, h3, table, img) przypisany
+do elementu, który chcesz w danym momencie formatować.
+Styl zdefiniowany dla przykładowego selektora p będzie odnosił się wyłącznie do
+akapitów zamkniętych w znacznikach <p></p> i nie będzie wpływał na pozostałe elementy
+strony WWW. <br>
+2)selektor uniwersalny<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+* { cecha: wartość }
+</textarea>
+<br>
+Cecha (ang. property) oraz wartość (ang. value) określają atrybuty elementu.
+Selektor taki pozwala ustalić określone atrybuty dla wszystkich elementów strony, a więc dla
+różnych selektorów typu. Możemy za pomocą tej komendy nadać to samo formatowanie dla
+wszystkich elementów na całej stronie, niezależnie od ich typu (p, h1, li itd.). <br>
+3)selektor potomka<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+przodek1 przodek2 ... potomek { cecha: wartość }
+</textarea>
+<br>
+Przy użyciu selektora potomka można formatować elementy, które sa zawarte wewnątrz
+innych znaczników, czyli leżą niżej w hierarchii drzewa dokumentu. Gdzie;
+"przodek1, przodek2,..." oraz "potomek" (wielokropek należy pominąć!) są selektorami
+typu, przy czym przodek leży wyżej w hierarchii drzewa dokumentu
+Natomiast wyrazy "cecha" oraz "wartość" określają atrybuty elementu. <br>
+4)selektor dziecka<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+rodzic > dziecko {właściwość: wartość}
+</textarea>
+<br>
+Selektor dziecka służy do definiowania elementów, które znajdują się o jeden rząd niżej w
+hierarchii drzewa dokumentów. Gdzie symbol „>” oznacza bezpośredni związek między elementami. <br>
+5)selektor braci<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+brat1 + brat2 {właściwość: wartość}
+</textarea>
+<br>
+Zastosowanie selekora rodzeństwa można przypisać styl elementowi bezpośrednio
+sąsiadującemu z innymi. By warunek został spełniony, oba selektory muszą mieć wspólnego
+„rodzica”. <br>
+6)selektor atrybutu<br>
+<textarea style="resize:none" rows=3 cols=33 readonly>
+selektor[atrybut] { cecha: wartość }
+</textarea>
+<br>
+Selektorem może być dowolny znacznik, np. ( p – akapit ), ( h1 – nagłówek ), (td - komórka
+tabeli).
+Atrybut oznacza konkretny parametr nadany znacznikowi z poziomu języka (X)HTML.
+Natomiast "cecha" oraz "wartość" określają atrybuty elementu nadane poprzez style i
+zostaną opisane w dalszych rozdziałach.
+Polecenie to może zostać wykorzystane dla elementów, którym z poziomu (X)HTML został
+nadany określony atrybut (przy czym jego wartość nie ma znaczenia). <br>
+7)selektory specjalne
+
+  
+</body>
+</html>
